@@ -1,0 +1,11 @@
+{% for todo in tod %}
+	<form method="get" action="/update_task">
+		<input type="text" name="id" value="{{todo._id}}" hidden/>
+		<input type="text" name="task_name" value="{{todo.name}}"/>
+		<input type="text" name="task_description" value="{{todo.description}}"/>
+		<input type="text" name="task_date" value="{{todo.date}}"/>
+		<input type="text" name="task_priority" value="{{todo.priority}}"/>
+	<button type="submit">update</button>
+	</form>
+{% endfor %}
+

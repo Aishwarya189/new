@@ -1,0 +1,38 @@
+<?xml version="1.0"encoding="utf-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head><title>program2b</title> 
+<script type="text/javascript"> 
+function validate(usn,sem) 
+{ 
+var pattern1=/^[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]$/; 
+var pattern2=/^[1-8]$/; 
+if(usn.value.length==0&&sem.value.length==0) 
+alert("usn and semester not entered please enter\n"); 
+else if(usn.value.length==0) 
+alert("usn not entered"); 
+else if(sem.value.length==0) 
+alert("sem not entered"); 
+else 
+{ 
+if(!usn.value.match(pattern1)) 
+alert("invalid usn"); 
+else 
+alert("valid usn"); 
+if(!sem.value.match(pattern2)) 
+alert("invalid sem"); 
+else 
+alert("valid sem"); 
+} 
+} 
+</script><body bgcolor="pink"> 
+<h1>program to validate usn</h1> 
+<form action=" "> 
+<p><label>enter the usn:<input type="text"name="usn"size="10"/> 
+</label></p> 
+<p><label>enter the semester<input type="text"name="sem"size="5"/> 
+</label></p> 
+<p><input type="submit" value="validate"onclick="validate(usn,sem)";/> 
+</p></form></body></html> 
+

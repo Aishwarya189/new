@@ -1,0 +1,10 @@
+{% for todo in tod %}
+	{{todo.name}}
+	{{todo.description}}
+	{{todo.date}}
+	{{todo.priority}}
+	<a href="/delete?id={{todo._id}}">delete</a>
+	<a href="/update?id={{todo._id}}">edit</a><br>
+{% endfor %}
+<a href="/create">create</a><br>
+<a href="/search">search</a>

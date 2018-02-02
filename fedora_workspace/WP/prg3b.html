@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head><title>program3a</title> 
+<link rel="stylesheet" type="text/css" href="/home/aishwarya/WP/3.css"/> 
+<script type="text/javascript"> 
+var toplayer="layer3"; 
+function movein(toTop) 
+{ 
+var oldTop=document.getElementById(toplayer).style; 
+var newTop=document.getElementById(toTop).style; 
+oldTop.zIndex="0"; 
+newTop.zIndex="1"; 
+toplayer=toTop; 
+} 
+</script> 
+<body> 
+<p class="layer1style" id="layer1" z-index="1" onmouseover="movein('layer1')" 
+onmouseout="movein('layer3');"> 
+This is paragraph one</p> 
+<p class="layer2style" id="layer2" z-index="1"onmouseover="movein('layer2')" 
+onmouseout="movein('layer3');"> 
+This is paragraph two</p> 
+<p class="layer3style" id="layer3" z-index="1"onmouseover="movein('layer3')" 
+onmouseout="movein('layer3');"> 
+This is paragraph three</p> 
+</body></html> 

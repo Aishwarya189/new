@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<?xml-stylesheet type="text/xsl" href="prg4b.xsl"?> 
+<student_information> 
+<ad><usn>1JB11CS001</usn></ad><br/> 
+<ad><name>ABC</name></ad><br/>  
+<ad><college>SJBIT</college></ad><br/>  
+<ad><branch>CSE</branch></ad><br/>  
+<ad><year>2001</year></ad><br/>  
+<ad><email>abc@gmail.com</email></ad> 
+</student_information> 
